@@ -85,10 +85,12 @@ def chatbot_response(text):
 
 @app.route('/', methods=['GET'])
 def apiLive():
+    question = request.args.get('q', None)
+    question = chatbot_response(question)
     return jsonify(isError= False,
                     message= "Success",
                     statusCode= 200,
-                    data= "API LIVE")
+                    data= question)
 
 @app.route('/', methods=['POST'])
 def home():

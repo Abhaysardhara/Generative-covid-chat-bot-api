@@ -737,6 +737,10 @@
 			"tag": "WhatisCovid",
 			"patterns": [
 				"covid 19",
+				"About covid",
+				"about corona",
+				"covid19",
+				"corona",
 				"What is SARS-CoV-2?",
 				"When did  Corona Virus (COVID-19) appear?",
 				"Where did  Corona Virus (COVID-19) appear?",
