@@ -19,8 +19,7 @@ import pickle
 import numpy as np
 import random
 
-app = Flask(__name__)
-run_with_ngrok(app)   
+app = Flask(__name__)  
 
 words = []
 classes = []
@@ -84,6 +83,13 @@ def chatbot_response(text):
     res = getResponse(ints, intents)
     return res
 
+@app.route('/test', methods=['GET'])
+def respond():
+    return jsonify(isError= False,
+                    message= "Success",
+                    statusCode= 200,
+                    data= "API STATUS LIVE")
+
 @app.route('/', methods=['GET'])
 def apiLive():
     question = request.args.get('q', None)
@@ -102,6 +108,7 @@ def home():
                     statusCode= 200,
                     data= question)
     
-port = int(os.environ.get("PORT", 5000))
-app.run(host='0.0.0.0', port=port)
+
+if __name__ == '__main__':
+    app.run(threaded=True, port=5000)
 
