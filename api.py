@@ -7,9 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1uSEel-cI0YbO9ZAEQLk9FHszd8gU5LFQ
 """
 
-import os
 from flask import Flask, request, jsonify
-from flask_ngrok import run_with_ngrok
 from keras.models import load_model
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -19,7 +17,7 @@ import pickle
 import numpy as np
 import random
 
-app = Flask(__name__)  
+app = Flask(__name__)
 
 words = []
 classes = []
@@ -94,21 +92,24 @@ def respond():
 def apiLive():
     question = request.args.get('q', None)
     question = chatbot_response(question)
-    return jsonify(isError= False,
+    response = jsonify(isError= False,
                     message= "Success",
                     statusCode= 200,
                     data= question)
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
 
 @app.route('/', methods=['POST'])
 def home():
     question = request.form.get('question')
     question = chatbot_response(question)
-    return jsonify(isError= False,
+    response = jsonify(isError= False,
                     message= "Success",
                     statusCode= 200,
                     data= question)
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
     
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
-
