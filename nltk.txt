@@ -1,2 +1,3 @@
 punkt
 reuters
+wordnet
