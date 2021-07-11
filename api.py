@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1uSEel-cI0YbO9ZAEQLk9FHszd8gU5LFQ
 """
 
+import os
 from flask import Flask, request, jsonify
 from flask_ngrok import run_with_ngrok
 from keras.models import load_model
@@ -101,5 +102,6 @@ def home():
                     statusCode= 200,
                     data= question)
     
-app.run()
+port = int(os.environ.get("PORT", 5000))
+app.run(host='0.0.0.0', port=port)
 
