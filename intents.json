@@ -40,20 +40,9 @@
 				"see ya later",
 				"talk to you soon",
 				"talk to you later",
-				"thanks bot",
-				"thank you",
 				"then bye",
-				"toodles",
-				"thanks",
-				"ttyl",
-				"ty",
-				"thx",
 				"bye im going to play a game",
 				"i am done with you",
-				"o thank u",
-				"ok thanks",
-				"ok thank you for your time",
-				"ok thank you",
 				"stop",
 				"gtg go right now ok",
 				"got to go bye nice time talking to you",
@@ -61,12 +50,8 @@
 				"good bye hohoho",
 				"dont need your help at all",
 				"done",
-				"be quiet robot",
-				"thanks for your help",
 				"shut up",
 				"youre welcome now bye",
-				"no thank you",
-				"thank you for the info",
 				"sorry got to go",
 				"take it easy",
 				"take care",
@@ -79,12 +64,10 @@
 				"see you later",
 				"see you",
 				"later",
-				"gtg",
 				"im leaving",
 				"have a good one",
 				"gotta run",
 				"gotta go",
-				"gday",
 				"good day",
 				"good bye",
 				"goodbye",
@@ -115,7 +98,18 @@
 				"Thank you",
 				"That's helpful",
 				"Awesome, thanks",
-				"Thanks for helping me"
+				"Thanks for helping me",
+				"thanks bot",
+				"ty",
+				"thx",
+				"o thank u",
+				"ok thanks",
+				"ok thank you for your time",
+				"ok thank you",
+				"be quiet robot",
+				"thanks for your help",
+        "no thank you",
+				"thank you for the info"
 			],
 			"responses": [
 				"Happy to help!",
@@ -147,8 +141,7 @@
 				"What you can do?",
 				"What help you provide?",
 				"How you can be helpful?",
-				"What support is offered",
-				"Who are you?"
+				"What support is offered"
 			],
 			"responses": [
 				"I can guide you through precautions in covid and other advice"
@@ -176,7 +169,10 @@
 				"does it spread on food packaging?",
 				"Can the virus that causes COVID-19 be spread through food, including refrigerated or frozen food?",
 				"do I need to wash my groceries?",
-				"spread via food"
+				"spread via food",
+        "Can i eat outside food?",
+        "Can i order pizza, burger?",
+        "Can i eat food from online deliveries?"
 			],
 			"responses": [
 				"Coronaviruses are generally thought to be spread from person-to-person through respiratory droplets. Currently there is no evidence to support transmission of COVID-19 associated with food. Before preparing or eating food it is important to always wash your hands with soap and water for 20 seconds for general food safety. Throughout the day wash your hands after blowing your nose, coughing or sneezing, or going to the bathroom. In general, because of poor survivability of these coronaviruses on surfaces, there is likely very low risk of spread from food products or packaging that are shipped over a period of days or weeks at ambient, refrigerated, or frozen temperatures."
@@ -208,6 +204,7 @@
 				"why was covid-19 used to name this disease?",
 				"is covid an abbreviation?",
 				"why is covid-19 the name for this disease?",
+        "Why the name is covid-19",
 				"Why is the disease being called coronavirus disease 2019, COVID-19?",
 				"is corona virus the same as covid-19?"
 			],
@@ -304,7 +301,7 @@
 			"patterns": [
 				"Are the symptoms of COVID-19 different in children than in adults?",
 				"do children react differently to the virus than adults do?",
-				"do kids get different symptoms?",
+				"do kids, children get different symptoms?",
 				"what are the symptoms in children?",
 				"Symptoms in children"
 			],
@@ -329,7 +326,7 @@
   			"Home self care"
 		],
 		"responses": [
-  			" Isolate yourself in a well ventilated room.\nUse a triple layer medical mask, discard mask after 8 hours of use or earlier if they become wet or visibly soiled. In the event of a caregiver entering the room, both caregiver and patient may consider using N 95 mask.\nMask should be discarded only after disinfecting it with 1% Sodium Hypochlorite.\nTake rest and drink a lot of fluids to maintain adequate hydration.\nFollow respiratory etiquettes at all times.\nFrequent hand washing with soap and water for at least 40 seconds or clean with alcohol-based sanitizer.\nDon’t share personal items with other people in the household.\nEnsure cleaning of surfaces in the room that are touched often (tabletops, doorknobs, handles, etc.) with 1% hypochlorite solution.\nMonitor temperature daily.\nMonitor oxygen saturation with a pulse oximeter daily.\nConnect with the treating physician promptly if any deterioration of symptoms is noticed."
+  			"Isolate yourself in a well ventilated room.\nUse a triple layer medical mask, discard mask after 8 hours of use or earlier if they become wet or visibly soiled. In the event of a caregiver entering the room, both caregiver and patient may consider using N 95 mask.\nMask should be discarded only after disinfecting it with 1% Sodium Hypochlorite.\nTake rest and drink a lot of fluids to maintain adequate hydration.\nFollow respiratory etiquettes at all times.\nFrequent hand washing with soap and water for at least 40 seconds or clean with alcohol-based sanitizer.\nDon’t share personal items with other people in the household.\nEnsure cleaning of surfaces in the room that are touched often (tabletops, doorknobs, handles, etc.) with 1% hypochlorite solution.\nMonitor temperature daily.\nMonitor oxygen saturation with a pulse oximeter daily.\nConnect with the treating physician promptly if any deterioration of symptoms is noticed."
 			],
 			"context": [
 				""
@@ -370,14 +367,19 @@
 			"patterns": [
 				"How many cases of covid 19 have been detected?",
 				"What is the stats on Corona Virus?",
+        "total cases in india",
 				"How many cases of Covid 19 has been detected?",
+        "total cases in world",
 				"What are the stats on COVID-19?",
+        "covid19 cases",
 				"How many cases so far?",
 				"Total Cases so Far",
 				"Current covid cases",
 				"covid cases in india",
+        "today cases",
 				"covid cases in world",
-				"How many cases of corona virus has been detected?"
+				"How many cases of corona virus has been detected?",
+        "covid stats"
 			],
 			"responses": [
 				"case_stats"
@@ -483,7 +485,7 @@
 			"tag": "Symptoms",
 			"patterns": [
 				"is fever a sign of this infection?",
-				"Symptoms",
+				"Symptoms of infection",
 				"what symptoms should I watch for?",
 				"What are the symptoms and complications that COVID-19 can cause?",
 				"does covid-19 cause fever?",
@@ -738,8 +740,9 @@
 		{
 			"tag": "not_happy",
 			"patterns": [
-				"!#$#%",
-				"bhe***d",
+        "Bastard",
+        "fuck you",
+        "fukin",
 				"You’re annoying",
 				"you suck",
 				"you’re boring",
@@ -766,7 +769,7 @@
 				"Who are you?"
 			],
 			"responses": [
-				"Hello dear, my name is covid-bot. I am built using AI."
+				"Hello dear, my name is covid-bot. I am built using Deep Neural Network."
 			],
 			"context": [
 				""
@@ -777,7 +780,7 @@
 			"patterns": [
 				"Who is your owner?",
 				"Who created you?",
-				"Who is your daddy?"
+				"tell me about your creator"
 			],
 			"responses": [
 				"Abhay Sardhara created me. More info about my owner - https://www.linkedin.com/in/abhaysardhara7675/"
@@ -829,8 +832,6 @@
 				"covid 19",
 				"About covid",
 				"about corona",
-				"covid19",
-				"corona",
 				"What is SARS-CoV-2?",
 				"When did  Corona Virus (COVID-19) appear?",
 				"Where did  Corona Virus (COVID-19) appear?",
@@ -1067,6 +1068,21 @@
 				""
 			]
 		},
+    {
+			"tag": "vaccination_side_effect",
+			"patterns": [
+				"What are the common side effects of the COVID-19 vaccine?",
+				"Side effect of covid vaccine",
+        "corona vaccine side effects",
+        "is vaccine safe for people"
+			],
+			"responses": [
+				"Reported side effects to COVID-19 vaccines have mostly been mild to moderate and short-lasting. They include: fever, fatigue, headache, muscle pain, chills, diarrhoea, and pain at the injection site. The chances of any of these side effects following vaccination differ according to the specific COVID-19 vaccine."
+			],
+			"context": [
+				""
+			]
+		},
 		{
 			"tag": "AnimalContact",
 			"patterns": [
@@ -1080,6 +1096,71 @@
 			],
 			"responses": [
 				"You should restrict contact with pets and other animals while you are sick with COVID-19, just like you would around other people. Although there have not been reports of pets or other animals becoming sick with COVID-19, it is still recommended that people sick with COVID-19 limit contact with animals until more information is known about the virus. When possible, have another member of your household care for your animals while you are sick. If you are sick with COVID-19, avoid contact with your pet, including petting, snuggling, being kissed or licked, and sharing food. If you must care for your pet or be around animals while you are sick, wash your hands before and after you interact with pets and wear a face mask."
+			],
+			"context": [
+				""
+			]
+		},
+    {
+			"tag": "Vaccination_stats",
+			"patterns": [
+				"total vaccination in india",
+				"give me vaccination stats",
+        "vaccination stats for india",
+        "How much vaccine used so far",
+        "vaccine stats",
+				"vaccination data",
+        "vaccination stats",
+        "What amount of vaccination done so far",
+        "vaccination percentage"
+			],
+			"responses": [
+				"Vaccination_stats"
+			],
+			"context": [
+				""
+			]
+		},
+    {
+			"tag": "vaccination_pregnancy",
+			"patterns": [
+				"Can Covid vaccine affect future pregnancy?",
+				"vaccine effect on pregnancy",
+        "is vaccine safe for pregnant woman",
+        "Can pregnant woman take vaccine",
+        "Is vaccine safe for pregnant women"
+			],
+			"responses": [
+				"Research done in more than 35,000 pregnant people who had the mRNA COVID-19 vaccines found there's no evidence the vaccines have affected or harmed people who were pregnant, and there's no evidence that the shots harm the baby or pregnancy."
+			],
+			"context": [
+				""
+			]
+		},
+    {
+			"tag": "vaccination_safe",
+			"patterns": [
+				"Can you still get Covid after both vaccines?",
+				"is it possible to get covid after taking vaccine",
+        "covid infection after taking vaccine"
+			],
+			"responses": [
+				"Covid-19 vaccines are highly effective but some people will still be vulnerable to the virus even after receiving their shots."
+			],
+			"context": [
+				""
+			]
+		},
+    {
+			"tag": "water_risk",
+			"patterns": [
+				"Has COVID-19 been detected in drinking water supplies?",
+				"is covid spread through water, river, lake",
+        "is covid spread through drinking water",
+        "virus in water"
+			],
+			"responses": [
+				"The COVID-19 virus has not been detected in drinking-water supplies, and based on current evidence, the risk to water supplies is low."
 			],
 			"context": [
 				""

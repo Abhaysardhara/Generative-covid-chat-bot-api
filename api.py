@@ -22,7 +22,7 @@ app = Flask(__name__)
 words = []
 classes = []
 documents = []
-ignore_words = ['!', '?']
+ignore_words = ['!', '?', ',', '.', "'m", "'s"]
 
 model = load_model('chatbot_model.h5')
 data_file = open('intents.json', encoding="utf8").read()
@@ -67,7 +67,7 @@ def predict_class(sentence, model):
 
 def getResponse(ints, intents_json):
     if len(ints)==0:
-      return "Not Understood"
+      return "Sorry, Not Understood your question"
     tag = ints[0]['intent']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
